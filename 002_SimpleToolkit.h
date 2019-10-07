@@ -1,3 +1,9 @@
+/*
+Autore: Giovanni Giorgis
+Titolo: Implementazione di un toolkit semplice
+Desccrizione: data una semplicissimo record formato da un char e un int creaare il relativo toolkit
+*/
+
 #include <string.h>
 #include <assert.h>
 #ifndef CASACCIO_H_INCLUDED
@@ -102,7 +108,7 @@ Casaccio * creaS(char *s)
 char** str_split(char* a_str, const char a_delim) //funzione che restituisce un vettore di stringhe(puntatore a array di puntatori)
 {
     printf("entro nella split, ho rievuto la stringa %s", a_str);
-    char** result    = 0; //crea ciò che poi restituiremo
+    char** result    = 0; //crea ciÃ² che poi restituiremo
     int count     = 0; //inizalizza un contatore
     char* tmp        = a_str; //fonddamentale per scorrere la stringa e non  perdere il puntatorre a quella
     char* last_comma = 0; //puntatore all'  ultima virgola
