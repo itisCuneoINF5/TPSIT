@@ -1,3 +1,9 @@
+/*
+Autore: Giovanni  Giorgis
+Titolo: Implemtazione della funzione split in C
+Descrizione: data un stringa ed una regex restituire un vettore di stringhe e testare la funzionalità
+
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -5,7 +11,7 @@
 
 char** str_split(char* a_str, const char a_delim) //funzione che restituisce un vettore di stringhe(puntatore a array di puntatori)
 {
-    char** result    = 0; //crea ci� che poi restituiremo
+    char** result    = 0; //crea ciò che poi restituiremo
     int count     = 0; //inizalizza un contatore
     char* tmp        = a_str; //fonddamentale per scorrere la stringa e non  perdere il puntatorre a quella
     char* last_comma = 0; //puntatore all'  ultima virgola
